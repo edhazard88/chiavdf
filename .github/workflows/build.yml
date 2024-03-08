@@ -27,12 +27,6 @@ jobs:
       fail-fast: false
       matrix:
         os:
-          - name: macOS
-            matrix: macos
-            runs-on:
-              intel: [macos-11]
-            cibw-archs-macos:
-              intel: x86_64
           - name: Ubuntu
             matrix: ubuntu
             runs-on:
